@@ -1,6 +1,6 @@
 //importar la libreria para output and imput
 #include <iostream>
-#include <conio.h>
+//#include <conio.h>
 
 int main() {
 
@@ -11,6 +11,6 @@ int main() {
 
 	std::cout << "Bienvenidos a Prgramacion 3!\n";
 
-	_getch();
+	//_getch();
 	return 0;
 }
