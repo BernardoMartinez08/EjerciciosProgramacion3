@@ -10,6 +10,8 @@ int main() {
 	* lineas*/
 
 	std::cout << "Bienvenidos a Prgramacion 3!\n";
+	std::cout << "Nombre: Bernardo Martinez.\n";
+	std::cout << "Carrera: Ingenieria en Sistemas Computacionales";
 
 	_getch();
 	return 0;
