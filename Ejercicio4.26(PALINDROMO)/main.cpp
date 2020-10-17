@@ -57,7 +57,8 @@ int main() {
 				}
 			}
 		}
-	}else {
+	}
+	else {
 		cout << "\nEl numero: " << numero << " NO es un PALNDROMO, sus digitos\n";
 
 		for (int i = 0; i < 5; i++) {
