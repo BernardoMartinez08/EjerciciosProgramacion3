@@ -38,23 +38,17 @@ int main() {
 	if (digitos[0] == digitos[4]) {
 		if (digitos[1] == digitos[3]) {
 			if (digitos[2] == digitos[2]) {
-				if (digitos[3] == digitos[1]) {
-					if (digitos[4] == digitos[0]) {
+				cout << "\nEl numero: " << numero << " es un PALNDROMO, sus digitos\n";
 
-						cout << "\nEl numero: " << numero << " es un PALNDROMO, sus digitos\n";
-
-						for (int i = 0; i < 5; i++) {
-							cout << digitos[i] << "   ";
-						}
-						cout << "\n\n\tY\n\n";
-						
-						for (int i = 4; i > -1; i--) {
-							cout << digitos[i] << "   ";
-						}
-						cout << "\nSe leen igual en ambos sentidos.\n";
-
-					}
+				for (int i = 0; i < 5; i++) {
+					cout << digitos[i] << "   ";
 				}
+				cout << "\n\n\tY\n\n";
+						
+				for (int i = 4; i > -1; i--) {
+					cout << digitos[i] << "   ";
+				}
+				cout << "\nSe leen igual en ambos sentidos.\n";
 			}
 		}
 	}
