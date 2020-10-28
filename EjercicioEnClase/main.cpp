@@ -45,6 +45,28 @@ public:
 
 		return cantidadDivisible == 2;
 	}
+
+	bool esCapicuo{
+		/*int digitos[5];
+
+		digitos[0] = valor / 10000;
+		digitos[1] = (valor % 10000) / 1000;
+		digitos[2] = ((valor % 10000) % 1000) / 100;
+		digitos[3] = (((valor % 10000) % 1000) % 100) / 10;
+		digitos[4] = ((((valor % 10000) % 1000) % 100) % 10) / 1;
+
+
+		if (digitos[0] == digitos[4]) {
+			if (digitos[1] == digitos[3]) {
+				if (digitos[2] == digitos[2]) {
+					cout << "\nEl numero: " << valor << " es un PALNDROMO, sus digitos\n";
+				}
+			}
+		}
+		else {
+			cout << "\nEl numero: " << valor << " NO es un PALNDROMO, sus digitos\n";
+		}*/
+	
 };
 
 int main() {
