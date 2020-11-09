@@ -6,6 +6,7 @@ enum TipoFigura {
 	tRectangulo,
 	tTrianguloRectangulo,
 	tCirculo,
+	tRombo,
 	tCuadrado,
 	tTrianguloIsoceles
 };
