@@ -9,7 +9,7 @@ Tambien incluye su funcion propia CalculasInteres.*/
 
 /*Constructor de la clase que recibe como parametro el valor double del saldo de la cuenta, pero adicional
 se necesita el valor double de la taza de interes que es propia de la clase hijo.*/
-CuentaAhorros::CuentaAhorros(double _saldoInicial, double _tasaInteres) : Cuenta(_saldoInicial), tasaInteres(_tasaInteres){
+CuentaAhorros::CuentaAhorros(string _NumCuenta,double _saldoInicial, double _tasaInteres) : Cuenta(_NumCuenta,_saldoInicial), tasaInteres(_tasaInteres){
 	/*Verificamos que dicho valor recibido sea mayor o igual a 0 ya que no existe
 	una taza de interes negativa de serlo se procede, si es un interes negativo se 
 	indica error.*/
@@ -24,4 +24,9 @@ padre obtener saldo, hace el calculo de los intereses correspondientes al saldo 
 multiplicado por la taza dada de interes.*/
 double CuentaAhorros::calcularInteres() {
 	return (obtenerSaldo() * tasaInteres);
+}
+
+//Devuelve el tipo de Cuenta
+TipoCuenta CuentaAhorros::getTipo() {
+	return TipoCuenta::tAhorros;
 }

@@ -9,7 +9,7 @@ ademas de lo que hace el padre carga una cuota de transaccion a la cuenta.*/
 
 /*Constructor de la clase que recibe como parametro el valor double del saldo de la cuenta, pero adicional
 se necesita el valor double de la cuenta de transaccion que es propia de la clase hijo.*/
-CuentaCheques::CuentaCheques(double _saldoInicial, double _cuotaTrans) : Cuenta(_saldoInicial),cuotaTransaccion(_cuotaTrans){
+CuentaCheques::CuentaCheques(string _NumCuenta, double _saldoInicial, double _cuotaTrans) : Cuenta(_NumCuenta,_saldoInicial),cuotaTransaccion(_cuotaTrans){
 	/*Verificamos que dicho valor recibido sea mayor o igual a 0 ya que no existe
 	cuota de transaccion negativa de serlo se procede, si es una cuota negativa se 
 	indica error.*/
@@ -43,4 +43,9 @@ bool CuentaCheques::cargar(double cantidad) {
 		return true;
 	}
 	return false;
+}
+
+//Devuelve el tipo de Cuenta
+TipoCuenta CuentaCheques::getTipo() {
+	return TipoCuenta::tCheques;
 }

@@ -1,15 +1,17 @@
 #include "Cuenta.h"
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 /*En el constructor de esta clase pedimos un valor de tipo double que nos
 permite incializar el valor del saldo de la cuenta con un valor diferente de 0*/
-Cuenta::Cuenta(double _saldoInicial) : saldo(0) {
+Cuenta::Cuenta(string ncuenta, double _saldoInicial) : saldo(0), numeroCuenta("") {
 	/*Verificamos que dicho valor recibido sea mayor o igual a 0 ya que no existe
 	saldo negativo de serlo se procede si es un saldo negativo se indica error.*/
-	if (_saldoInicial >= 0)
+	if (_saldoInicial >= 0 && ncuenta != "") {
 		saldo = _saldoInicial;
+		numeroCuenta = ncuenta;
+	}
 	else
 		throw invalid_argument("Saldo Inicial no puede ser negativo");
 }
@@ -42,4 +44,20 @@ double Cuenta::obtenerSaldo() {
 //Funcion que con un parametro recibido tip double actualiza el saldo de la cuenta.
 void Cuenta::actualizarSaldo(double _saldoActualizado) {
 	saldo = _saldoActualizado;
+}
+
+void Cuenta::setNumCuenta(string NCuenta) {
+	if (NCuenta != "") {
+		numeroCuenta = NCuenta;
+	}else
+		throw invalid_argument("Numero de cuenta no debe ser vacio.");
+}
+
+string Cuenta::getNumCuenta() {
+	return numeroCuenta;
+}
+
+//Devuelve el tipo de Cuenta
+TipoCuenta Cuenta::getTipo() {
+	return TipoCuenta::tNormal;
 }
