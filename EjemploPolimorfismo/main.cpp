@@ -73,7 +73,7 @@ int main() {
 	cout << "\n\nCantidad de TriangulosRectangulos: " << cantidadTR << "\n";
 
 
-	//Cracion de menu
+	//Creacion de menu
 	//El entero opcion que sera el que maneje nuestro menu y el entero figurasagrgadas que nos contabiliza la
 	//cantidad de figuras agregadas y el arreglo de figuras2D de 20 espacios.
 
