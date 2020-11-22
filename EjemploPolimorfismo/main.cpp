@@ -15,7 +15,7 @@ int main() {
 	//estructura de tamano fijo
 	Figura2D* Figuras[4];
 
-	Figuras[0] = new Rectangulo(4, 1);
+	Figuras[0] = new Rectangulo(0, 1);
 	Figuras[1] = new TrianguloRectangulo(5, 3);
 	Figuras[2] = new Rectangulo(4, 3);
 	Figuras[3] = new TrianguloRectangulo(6, 2);

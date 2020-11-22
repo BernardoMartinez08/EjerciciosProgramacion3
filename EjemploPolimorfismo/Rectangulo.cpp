@@ -10,7 +10,7 @@ Rectangulo::Rectangulo(int _base, int _altura) : base(_base), altura(_altura) {
 	if (_base <= 0 || _altura <=0 ) {
 		base = 1;
 		altura = 1;
-		throw invalid_argument("Base y Altura deben ser > o");
+		throw invalid_argument("Base y Altura deben ser > 0");
 	}
 	else {
 		base = _base;
