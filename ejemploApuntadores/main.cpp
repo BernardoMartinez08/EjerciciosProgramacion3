@@ -26,7 +26,7 @@ int main() {
 	cout << "\n";
 
 	numero = 33;
-	cout << "Valor depositado eb la posicion de memoria: " << *numeroPtr << "\n";
+	cout << "Valor depositado en la posicion de memoria: " << *numeroPtr << "\n";
 	cout << "Direccion de Memoria de NumeroPtr: " << &numeroPtr << "\n";
 		
 	//Array
