@@ -10,8 +10,15 @@ public:
 	void agregarNodo(int);
 	void imprimirArbol();
 
+	int sumatoriaNodos();
+	int cantidadNodos();
 private:
 	NodoArbol* raiz;
+
+	NodoArbol* agregarNodoRec(NodoArbol*, int);
+	void imprimirArbolRec(NodoArbol*);
+	int sumatoriaNodosRec(NodoArbol*);
+	int cantidadNodosRec(NodoArbol*);
 };
 
 #endif // !ARBOL_BINARIO_H
