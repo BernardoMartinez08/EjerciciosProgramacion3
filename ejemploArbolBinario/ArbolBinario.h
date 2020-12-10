@@ -3,22 +3,24 @@
 #define ARBOL_BINARIO_H
 
 #include "NodoArbol.h"
-class ArbolBinario {
+
+class ArbolBinario
+{
 public:
 	ArbolBinario();
-
 	void agregarNodo(int);
 	void imprimirArbol();
 
 	int sumatoriaNodos();
 	int cantidadNodos();
+
 private:
-	NodoArbol* raiz;
+	NodoArbol* raiz; //primer nodo del arbol
 
 	NodoArbol* agregarNodoRec(NodoArbol*, int);
-	void imprimirArbolRec(NodoArbol*);
-	int sumatoriaNodosRec(NodoArbol*);
 	int cantidadNodosRec(NodoArbol*);
+	int sumatoriaNodossRec(NodoArbol*);
+	void imprimirRec(NodoArbol*);
 };
 
 #endif // !ARBOL_BINARIO_H

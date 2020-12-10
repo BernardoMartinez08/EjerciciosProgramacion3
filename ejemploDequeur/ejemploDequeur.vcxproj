@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{66f51f6e-714f-4397-83f8-e97c97968ebb}</ProjectGuid>
-    <RootNamespace>ejemploArbolBinario</RootNamespace>
+    <ProjectGuid>{b4a2eaf8-bbad-4db1-86f6-abce7be2fc90}</ProjectGuid>
+    <RootNamespace>ejemploDequeur</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>ejemploDequeue</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,13 +140,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ArbolBinario.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="NodoArbol1.cpp" />
+    <ClInclude Include="ColaDE.h" />
+    <ClInclude Include="NodoColaDE.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArbolBinario.h" />
-    <ClInclude Include="NodoArbol1.h" />
+    <ClCompile Include="ColaDE.cpp" />
+    <ClCompile Include="NodoColaDE.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

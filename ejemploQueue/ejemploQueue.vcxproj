@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{66f51f6e-714f-4397-83f8-e97c97968ebb}</ProjectGuid>
-    <RootNamespace>ejemploArbolBinario</RootNamespace>
+    <ProjectGuid>{9485f231-aae4-4728-834f-540938ba36d0}</ProjectGuid>
+    <RootNamespace>ejemploQueue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,13 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ArbolBinario.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="NodoArbol1.cpp" />
+    <ClInclude Include="Cola.h" />
+    <ClInclude Include="NodoCola.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArbolBinario.h" />
-    <ClInclude Include="NodoArbol1.h" />
+    <ClCompile Include="Cola.cpp" />
+    <ClCompile Include="NodoCola.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

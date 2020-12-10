@@ -18,18 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
-    <ClCompile Include="NodoArbol1.cpp">
-      <Filter>Archivos de recursos</Filter>
-    </ClCompile>
-    <ClCompile Include="ArbolBinario.cpp">
+    <ClCompile Include="EntidadEducativa.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="NodoArbol1.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="ArbolBinario.h">
+    <ClInclude Include="EntidadEducativa.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
