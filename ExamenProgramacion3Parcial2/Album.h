@@ -6,7 +6,7 @@
 class Album {
 public:
 	Album();
-	Album(const char*, int, const char*, Sencillo*, Album*);
+	Album(const char*, int, const char*, Sencillo*);
 
 	void setNombre(const char*);
 	void setAnioPublicacion(int);
