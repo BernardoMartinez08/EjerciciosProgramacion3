@@ -8,7 +8,7 @@ Artista::Artista() : nombreArtistico(nullptr), anioNacimiento(0), primerAlbum(nu
 
 }
 
-Artista::Artista(const char* _nombre, int _anioNacimiento) : anioNacimiento(anioNacimiento), primerAlbum(nullptr) {
+Artista::Artista(const char* _nombre, int _anioNacimiento) : anioNacimiento(_anioNacimiento), primerAlbum(nullptr) {
 	nombreArtistico = new char[strlen(_nombre)];
 	strcpy_s(nombreArtistico, strlen(_nombre) + 1, _nombre);
 
