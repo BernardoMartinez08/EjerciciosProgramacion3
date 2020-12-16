@@ -15,6 +15,10 @@ Album::Album(const char* _nombre, int _anioPublicacion, const char* _genero,Senc
 	strcpy_s(genero, strlen(_genero) + 1, _genero);
 }
 
+bool Album::estaVacia() {
+	return primerSencillo == nullptr;
+}
+
 void Album::setNombre(const char* _nombre) {
 	if (nombreAlbum != nullptr)
 		delete nombreAlbum;
@@ -61,4 +65,52 @@ Sencillo* Album::getPrimerSencillo() {
 
 Album* Album::getSiguienteAlbum() {
 	return this->siguienteAlbum;
+}
+
+int Album::duracion() {
+	int duracionTotal = 0;
+
+	if (estaVacia())
+		return 0;
+
+	Sencillo* actual = primerSencillo;
+	do {
+		duracionTotal += actual->getDuracion();
+		actual = actual->getSiguienteSencillo();
+	} while (actual != nullptr);
+
+	return duracionTotal;
+}
+
+int Album::cantidadSencillos() {
+	int totalSencillos = 0;
+
+	if (estaVacia())
+		return 0;
+
+	Sencillo* actual = primerSencillo;
+	do {
+		totalSencillos++;
+		actual = actual->getSiguienteSencillo();
+	} while (actual != nullptr);
+
+	return totalSencillos;
+}
+
+void Album::agregarSencillo(const char* _nombre, int _duracion) {
+	Sencillo* nuevo = new Sencillo(_nombre, _duracion, nullptr);
+
+	if (estaVacia()) {
+		primerSencillo = nuevo;
+	}
+	else {
+		ultimo->setSiguiente(nuevo);
+		nuevo->setAnterior(ultimo);
+		ultimo = nuevo;
+
+		ultimo->setSiguiente(primero);
+		primero->setAnterior(ultimo);
+	}
+
+	cout << "\nNodo Agregado!\n";
 }

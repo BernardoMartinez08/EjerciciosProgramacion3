@@ -8,6 +8,9 @@ public:
 	Album();
 	Album(const char*, int, const char*, Sencillo*);
 
+	bool estaVacia();
+	void agregarSencillo(const char*, int);
+
 	void setNombre(const char*);
 	void setAnioPublicacion(int);
 	void setGenero(const char*);
@@ -19,6 +22,9 @@ public:
 	char* getGenero();
 	Sencillo* getPrimerSencillo();
 	Album* getSiguienteAlbum();
+
+	int duracion();
+	int cantidadSencillos();
 	
 private:
 	char* nombreAlbum;

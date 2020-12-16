@@ -20,15 +20,14 @@ void ListaCircular::agregarNodo(const char* _valor) {
 		primero->setAnterior(ultimo);
 	}
 	else {
-		ultimo->setSiguiente(nuevo);
-		nuevo->setAnterior(ultimo);
-		ultimo = nuevo;
+		Nodo* actual = primero;
 
-		ultimo->setSiguiente(primero);
-		primero->setAnterior(ultimo);
+		while (actual->getSiguiente() != nullptr) {
+			actual = actual->getSiguiente();
+		}
+
+		actual->setSiguiente(nuevo);
 	}
-
-	cout << "\nNodo Agregado!\n";
 }
 
 void ListaCircular::imprimirLista() {
