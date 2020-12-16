@@ -140,7 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Album.h" />
+    <ClInclude Include="Artista.h" />
     <ClInclude Include="Sencillo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Album.cpp" />
+    <ClCompile Include="Artista.cpp" />
+    <ClCompile Include="Sencillo.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
