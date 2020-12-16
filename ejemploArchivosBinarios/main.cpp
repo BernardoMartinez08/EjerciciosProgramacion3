@@ -26,5 +26,6 @@ int main() {
 
 	EntidadEducativa::agregarNotas(ncuenta,codigoclass,nota);
 	EntidadEducativa::consultarNotas();
+
 	_getch();
 }

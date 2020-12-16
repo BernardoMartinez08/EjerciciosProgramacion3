@@ -31,6 +31,12 @@ public:
 
 	static void agregarNotas(int,int,float);
 	static void consultarNotas();
+	
+	static bool existeAlumno(int);
+	static bool existeClase(int);
+
+	static int obtenerUV(int);
+	static void actualizarPromedio(int);
 };
 
 #endif // !UNIVERSIDAD_H
