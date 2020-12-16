@@ -135,3 +135,18 @@ void Artista::agregarAlbum(const char* _nombre, int _anio, const char* _genero) 
 		cout << "\n\nGUARDADO!\n\n";
 	}
 }
+
+Album* Artista::buscarAlbum(const char* _nombre) {
+	if (estaVacia())
+		return nullptr;
+
+	Album* actualAlbum = primerAlbum;
+	do {
+		if (actualAlbum->getNombre() == _nombre)
+			return actualAlbum;
+
+		actualAlbum = actualAlbum->getSiguienteAlbum();
+	} while (actualAlbum != nullptr);
+
+	return nullptr;
+}

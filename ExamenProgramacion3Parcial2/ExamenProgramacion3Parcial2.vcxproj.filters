@@ -35,5 +35,8 @@
     <ClCompile Include="Album.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

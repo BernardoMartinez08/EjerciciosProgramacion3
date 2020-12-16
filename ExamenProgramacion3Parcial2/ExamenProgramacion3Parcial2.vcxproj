@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClCompile Include="Album.cpp" />
     <ClCompile Include="Artista.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Sencillo.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

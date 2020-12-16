@@ -10,6 +10,8 @@ public:
 
 	bool estaVacia();
 	void agregarAlbum(const char*, int, const char*);
+	Album* buscarAlbum(const char*);
+
 
 	void setNombre(const char*);
 	void setAnioNacimiento(int);
