@@ -7,7 +7,7 @@ Album::Album() : nombreAlbum(nullptr),anioPublicacion(0),genero(nullptr), primer
 
 }
 
-Album::Album(const char* _nombre, int _anioPublicacion, const char* _genero,Sencillo* _primerSencillo) : anioPublicacion(anioPublicacion), primerSencillo(_primerSencillo), siguienteAlbum(nullptr) {
+Album::Album(const char* _nombre, int _anioPublicacion, const char* _genero,Sencillo* _primerSencillo) : anioPublicacion(_anioPublicacion), primerSencillo(_primerSencillo), siguienteAlbum(nullptr) {
 	nombreAlbum = new char[strlen(_nombre)];
 	strcpy_s(nombreAlbum, strlen(_nombre) + 1, _nombre);
 
@@ -104,13 +104,13 @@ void Album::agregarSencillo(const char* _nombre, int _duracion) {
 		primerSencillo = nuevo;
 	}
 	else {
-		ultimo->setSiguiente(nuevo);
-		nuevo->setAnterior(ultimo);
-		ultimo = nuevo;
+		Sencillo* actual = primerSencillo;
 
-		ultimo->setSiguiente(primero);
-		primero->setAnterior(ultimo);
+		while (actual->getSiguienteSencillo() != nullptr) {
+			actual = actual->getSiguienteSencillo();
+		}
+
+		actual->setSiguienteSencillo(nuevo);
+		cout << "\n\nGUARDADO!\n\n";
 	}
-
-	cout << "\nNodo Agregado!\n";
 }

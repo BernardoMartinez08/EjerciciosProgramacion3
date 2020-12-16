@@ -6,15 +6,16 @@
 class Artista {
 public:
 	Artista();
-	Artista(const char*, int, Album*);
+	Artista(const char*, int);
+
+	bool estaVacia();
+	void agregarAlbum(const char*, int, const char*);
 
 	void setNombre(const char*);
-	void setAnioNAcimiento(int);
-	void setSiguienteAlbum(Album*);
+	void setAnioNacimiento(int);
 
 	char* getNombre();
 	int getAnioNacimiento();
-	Album* getSiguienteAlbum();
 
 	int totalSencillo();
 	int cantidadAlbumes();
@@ -23,7 +24,7 @@ public:
 private:
 	char* nombreArtistico;
 	int anioNacimiento;
-	Album* primerArlbum;
+	Album* primerAlbum;
 
 };
 
