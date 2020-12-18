@@ -66,6 +66,8 @@ int main() {
 			cout << "\n\n*** L I S T A***\n";
 			ListaObjetos.imprimirLista();
 			break;
+		case 7:
+			cout << "\n\nSaliendo............";
 		}
 	}
 
