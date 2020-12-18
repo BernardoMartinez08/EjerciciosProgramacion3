@@ -10,7 +10,7 @@ int main() {
 	int opc = 0;
 
 	while (opc != 7) {
-		cout << "***M E N U***";
+		cout << "\n\n***M E N U***";
 
 		cout << "\n\n1. Agregar Cadena.";
 		cout << "\n2. Agregar Entero.";
@@ -42,19 +42,19 @@ int main() {
 
 
 		case 3:
+			cout << "\n\nIngresa el Decimal positivo: ";
+			double decimal;
+			cin >> decimal;
+
+			ListaObjetos.agregarNodo(decimal);
+			break;
+
+		case 4:
 			cout << "\n\nIngresa el Caracter: ";
 			char caracter;
 			cin >> caracter;
 
 			ListaObjetos.agregarNodo(caracter);
-			break;
-
-		case 4:
-			cout << "\n\nIngresa el entero positivo: ";
-			int entero;
-			cin >> entero;
-
-			ListaObjetos.agregarNodo(entero);
 			break;
 
 		case 5:

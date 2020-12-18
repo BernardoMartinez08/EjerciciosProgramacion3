@@ -157,7 +157,7 @@ void ListaCircularD::obtenerCantidadObjetos() {
 		actual = actual->getSiguiente();
 	} while (actual != primero);
 
-	cout << "\nEnteros: " << enteros << "\nDecimales: " << decimales << "\nCadenas: " << cadenas << "Caracteres: " << caracteres << "\n\n";
+	cout << "\nEnteros: " << enteros << "\nDecimales: " << decimales << "\nCadenas: " << cadenas << "\nCaracteres: " << caracteres << "\n\n";
 }
 
 

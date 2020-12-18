@@ -20,7 +20,7 @@ public:
 	NodoB* getSiguiente();
 	NodoB* getAnterior();
 
-	TipoNodo getTipo();
+	virtual TipoNodo getTipo() = 0;
 
 private:
 	NodoB* siguiente;
