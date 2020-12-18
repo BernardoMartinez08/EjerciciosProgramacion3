@@ -6,8 +6,9 @@
 class NodoCadena : public NodoB {
 public:
 	NodoCadena();
-	NodoCadena(char*, NodoB*, NodoB*);
+	NodoCadena(const char*,NodoB*,NodoB*);
 
+	void setValor(const char*);
 	char* getValor();
 
 private:

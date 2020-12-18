@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="NodoB.cpp" />
+    <ClCompile Include="NodoCadena.cpp" />
+    <ClCompile Include="NodoEntero.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NodoB.h" />

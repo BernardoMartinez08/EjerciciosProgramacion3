@@ -6,7 +6,7 @@
 class NodoCaracter : public NodoB {
 public:
 	NodoCaracter();
-	NodoCaracter(char, NodoB*, NodoB*);
+	NodoCaracter(char,NodoB*,NodoB*);
 
 	char getValor();
 

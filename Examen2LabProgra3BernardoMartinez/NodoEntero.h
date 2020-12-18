@@ -6,8 +6,9 @@
 class NodoEntero : public NodoB{
 public:
 	NodoEntero();
-	NodoEntero(int,NodoB*, NodoB*);
+	NodoEntero(int, NodoB*, NodoB*);
 
+	void setValor(int);
 	int getValor();
 
 private:
