@@ -19,3 +19,7 @@ void NodoCaracter::setValor(char _valor) {
 char NodoCaracter::getValor() {
 	return this->valor;
 }
+
+TipoNodo NodoCaracter::getTipo() {
+	return TipoNodo::tCaracter;
+}

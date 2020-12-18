@@ -11,6 +11,7 @@ public:
 	void setValor(char);
 	char getValor();
 
+	TipoNodo getTipo();
 private:
 	char valor;
 };

@@ -2,6 +2,13 @@
 #ifndef  NODOB_H
 #define NodoB_H
 
+enum TipoNodo {
+	tEntero,
+	tDecimal,
+	tCadena,
+	tCaracter
+};
+
 class NodoB {
 public:
 	NodoB();
@@ -12,6 +19,8 @@ public:
 
 	NodoB* getSiguiente();
 	NodoB* getAnterior();
+
+	TipoNodo getTipo();
 
 private:
 	NodoB* siguiente;

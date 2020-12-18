@@ -11,6 +11,7 @@ public:
 	void setValor(int);
 	int getValor();
 
+	TipoNodo getTipo();
 private:
 	int valor;
 };

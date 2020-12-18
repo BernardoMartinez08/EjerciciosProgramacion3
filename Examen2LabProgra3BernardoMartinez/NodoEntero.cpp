@@ -20,3 +20,7 @@ void NodoEntero::setValor(int _valor) {
 int NodoEntero::getValor() {
 	return this->valor;
 }
+
+TipoNodo NodoEntero::getTipo() {
+	return TipoNodo::tEntero;
+}

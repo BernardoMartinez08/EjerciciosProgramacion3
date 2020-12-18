@@ -11,6 +11,7 @@ public:
 	void setValor(double);
 	double getValor();
 
+	TipoNodo getTipo();
 private:
 	double valor;
 };

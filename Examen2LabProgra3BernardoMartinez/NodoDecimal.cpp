@@ -20,3 +20,7 @@ void NodoDecimal::setValor(double _valor) {
 double NodoDecimal::getValor() {
 	return this->valor;
 }
+
+TipoNodo NodoDecimal::getTipo() {
+	return TipoNodo::tDecimal;
+}

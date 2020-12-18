@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ListaCircularD.cpp" />
     <ClCompile Include="NodoB.cpp" />
     <ClCompile Include="NodoCadena.cpp" />
     <ClCompile Include="NodoCaracter.cpp" />
@@ -146,6 +147,7 @@
     <ClCompile Include="NodoEntero.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ListaCircularD.h" />
     <ClInclude Include="NodoB.h" />
     <ClInclude Include="NodoCadena.h" />
     <ClInclude Include="NodoCaracter.h" />

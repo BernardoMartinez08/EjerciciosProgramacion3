@@ -21,3 +21,7 @@ void NodoCadena::setValor(const char* _valor) {
 char* NodoCadena::getValor() {
 	return this->valor;
 }
+
+TipoNodo NodoCadena::getTipo() {
+	return TipoNodo::tCadena;
+}
