@@ -10,7 +10,7 @@ int main() {
 	nuevo.agregarAlbum("Positions",2020,"POP");
 	nuevo.agregarAlbum("Dangerous", 2018, "R&B");
 
-	Album* Position = nuevo.buscarAlbum("Positions");
+	Album* Position = nuevo.buscarAlbum("Dangerous");
 	if (Position != nullptr) {
 		Position->agregarSencillo("Positions", 3);
 		Position->agregarSencillo("34 + 35", 2);

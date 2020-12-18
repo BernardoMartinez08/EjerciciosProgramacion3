@@ -99,19 +99,17 @@ void Artista::guardarEnArchivo() {
 	Album* actualAlbum = primerAlbum;
 	Sencillo* actualSencillo = primerAlbum->getPrimerSencillo();
 	
+	archivoArtista << nombreArtistico << " " << anioNacimiento << "\n";
 	for (int i = 0; i < cantidadAlbumes(); i++) {
-		archivoArtista << nombreArtistico << " " << anioNacimiento << "\n";
-		do {
+
+		while (actualAlbum != nullptr) {
 			archivoArtista << actualAlbum->getNombre() << " " << actualAlbum->getAnioPublicacion() << " " << actualAlbum->getGenero() << "\n";
-			do {
+			while (actualSencillo != nullptr) {
 				archivoArtista << actualSencillo->getNombre() << " " << actualSencillo->getDuracion() << "\n";
 				actualSencillo = actualSencillo->getSiguienteSencillo();
-			} while (actualSencillo != nullptr);
-
+			}
 			actualAlbum = actualAlbum->getSiguienteAlbum();
-		} while (actualAlbum != nullptr);
-
-
+		}
 		cout << "GUARDADO!\n\n";
 	}
 
@@ -141,12 +139,15 @@ Album* Artista::buscarAlbum(const char* _nombre) {
 		return nullptr;
 
 	Album* actualAlbum = primerAlbum;
-	do {
-		if (actualAlbum->getNombre() == _nombre)
+	while (actualAlbum != nullptr) {
+		cout << actualAlbum->getNombre() << "\n";
+		if (actualAlbum->getNombre() == _nombre) {
+			cout << "Obvio";
 			return actualAlbum;
+		}
 
 		actualAlbum = actualAlbum->getSiguienteAlbum();
-	} while (actualAlbum != nullptr);
+	} 
 
 	return nullptr;
 }

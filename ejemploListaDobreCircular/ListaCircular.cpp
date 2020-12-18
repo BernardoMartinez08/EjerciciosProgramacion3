@@ -11,23 +11,26 @@ bool ListaCircular::estaVacia() {
 }
 
 void ListaCircular::agregarNodo(const char* _valor) {
-	Nodo* nuevo = new Nodo(_valor,nullptr,nullptr);
+	Nodo* nuevo = new Nodo(_valor, nullptr, nullptr);
 
-	if (estaVacia()) {
+	if (estaVacia())
+	{
 		primero = nuevo;
 		ultimo = nuevo;
 		ultimo->setSiguiente(primero);
 		primero->setAnterior(ultimo);
 	}
-	else {
-		Nodo* actual = primero;
+	else
+	{
+		ultimo->setSiguiente(nuevo);
+		nuevo->setAnterior(ultimo);
+		ultimo = nuevo;
 
-		while (actual->getSiguiente() != nullptr) {
-			actual = actual->getSiguiente();
-		}
-
-		actual->setSiguiente(nuevo);
+		ultimo->setSiguiente(primero);
+		primero->setAnterior(ultimo);
 	}
+
+	cout << "Nodo agregado!\n";
 }
 
 void ListaCircular::imprimirLista() {
