@@ -8,6 +8,7 @@ public:
 	NodoCaracter();
 	NodoCaracter(char,NodoB*,NodoB*);
 
+	void setValor(char);
 	char getValor();
 
 private:

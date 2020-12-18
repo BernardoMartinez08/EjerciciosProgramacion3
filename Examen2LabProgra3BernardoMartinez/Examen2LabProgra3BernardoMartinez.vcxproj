@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClCompile Include="NodoB.cpp" />
     <ClCompile Include="NodoCadena.cpp" />
+    <ClCompile Include="NodoCaracter.cpp" />
+    <ClCompile Include="NodoDecimal.cpp" />
     <ClCompile Include="NodoEntero.cpp" />
   </ItemGroup>
   <ItemGroup>

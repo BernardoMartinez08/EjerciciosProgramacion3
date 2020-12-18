@@ -8,6 +8,7 @@ public:
 	NodoDecimal();
 	NodoDecimal(double, NodoB*, NodoB*);
 
+	void setValor(double);
 	double getValor();
 
 private:
