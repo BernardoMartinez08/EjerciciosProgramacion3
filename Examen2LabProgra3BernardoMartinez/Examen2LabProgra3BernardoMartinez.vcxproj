@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ListaCircularD.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="NodoB.cpp" />
     <ClCompile Include="NodoCadena.cpp" />
     <ClCompile Include="NodoCaracter.cpp" />
