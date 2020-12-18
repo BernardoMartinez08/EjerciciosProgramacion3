@@ -143,6 +143,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NodoB.h" />
+    <ClInclude Include="NodoCadena.h" />
+    <ClInclude Include="NodoCaracter.h" />
+    <ClInclude Include="NodoDecimal.h" />
+    <ClInclude Include="NodoEntero.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
