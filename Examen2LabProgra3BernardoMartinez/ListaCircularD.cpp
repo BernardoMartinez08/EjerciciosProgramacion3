@@ -111,7 +111,23 @@ void ListaCircularD::imprimirLista() {
 	NodoB* actual = primero;
 	cout << "\n";
 	do {
-		cout << "[ " << actual->getValor() << " ] ";
+		if (actual->getTipo() == TipoNodo::tCadena) {
+			NodoCadena* nodo = (NodoCadena*)actual;
+			cout << "[ Tipo: Cadena, Valor: " << nodo->getValor() << " ] ";
+
+		}else if (actual->getTipo() == TipoNodo::tCaracter) {
+			NodoCaracter* nodo = (NodoCaracter*)actual;
+			cout << "[ Tipo: Caracter, Valor: " << nodo->getValor() << " ] ";
+
+		}else if (actual->getTipo() == TipoNodo::tEntero) {
+			NodoEntero* nodo = (NodoEntero*)actual;
+			cout << "[ Tipo: Entero, Valor: " << nodo->getValor() << " ] ";
+
+		}else if (actual->getTipo() == TipoNodo::tDecimal) {
+			NodoDecimal* nodo = (NodoDecimal*)actual;
+			cout << "[ Tipo: Decimal, Valor: " << nodo->getValor() << " ] ";
+		}
+
 		actual = actual->getSiguiente();
 	} while (actual != primero);
 
