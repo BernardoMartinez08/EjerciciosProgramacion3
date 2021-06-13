@@ -18,11 +18,23 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cadena.h" />
+    <ClInclude Include="Entero.h" />
+    <ClInclude Include="Logico.h" />
+    <ClInclude Include="Objeto.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cadena.cpp" />
+    <ClCompile Include="Entero.cpp" />
+    <ClCompile Include="Logico.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{29a3b8bf-5be6-4342-81d4-a45a0f87b400}</ProjectGuid>
-    <RootNamespace>HolaMundo</RootNamespace>
+    <ProjectGuid>{c34b0a67-99e7-48e3-adc1-7f4cd24cf3af}</ProjectGuid>
+    <RootNamespace>ExamenOscarSalguero</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -138,10 +150,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Ejercicio_2.cpp" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
