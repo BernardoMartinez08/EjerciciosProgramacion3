@@ -143,6 +143,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NodoB.cpp" />
     <ClCompile Include="NodoCadena.cpp" />
+    <ClCompile Include="NodoCampo.cpp" />
     <ClCompile Include="NodoCaracter.cpp" />
     <ClCompile Include="NodoDecimal.cpp" />
     <ClCompile Include="NodoEntero.cpp" />
